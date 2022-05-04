@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 // import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Button, Form, Grid, Segment } from 'semantic-ui-react'
+import background from '../background.jpg'
 
 function DriverForm() {
   const [license, setLicense] = useState('')
@@ -14,6 +15,12 @@ function DriverForm() {
     //dispatch(registerAsDriver(license, vehicleNo));
   }
   return (
+    <div
+      style={{
+          backgroundImage: `url(${background})`,
+          height: '100vh',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',}}>
     <Grid textAlign="center" style={{ height: '100vh' }} verticalAlign="middle">
       <Grid.Column style={{ maxWidth: 450 }}>
         {/* TODO: check if user is already registered as a driver.  */}
@@ -41,6 +48,7 @@ function DriverForm() {
         </Form>
       </Grid.Column>
     </Grid>
+    </div>
   )
 }
 

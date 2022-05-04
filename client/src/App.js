@@ -53,8 +53,8 @@ class App extends Component {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />}/>
-          <Route exact path="/ride" element={<RiderForm />} />
-          <Route exact path="/drive" element={<DriverForm />} />
+          <Route exact path="/ride" element={<RiderForm />}/>
+          <Route exact path="/drive" element={<DriverForm />}/>
           <Route exact path="/bids" element={<Bids />} />
           <Route exact path="/options" element={<RideOptions />} />
           <Route exact path="/ongoingRide/:address" element={<RideConfirmed />} />
